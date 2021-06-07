@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentorship Scheduler</title>
+    <link rel="stylesheet" href="{% static '/scheduler/style.css' %}" type="text/css"
+    media="screen">
+</head>
+<body>
+    <div class="container">
+        <h1>Mentor Baru</h1>
+        <form>
+            <div class="form_element">
+                <input type="text" name="name" placeholder=
+                "nama mentor" required="">
+            </div>
+            <div class="form_element">
+                <input type="email" name="email" placeholder=
+                "mail@email.com">
+            </div>
+            <div class="form_element">
+                Rp. <input type="number" name="duration" placeholder=
+                "30"> / Menit
+            </div>
+            <div class="form_element">
+                <button type="submit">Simpan</button>
+                <a class="button default" href="{% url 'index' %}">Batal</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

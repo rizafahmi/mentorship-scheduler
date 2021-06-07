@@ -1,13 +1,57 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="id">
 <head>
-    <meta charset="UTF-8">
-    <title>Mentorship Scheduler</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Jadwal Tersimpan</title>
+    <meta name="description" content="">
+    <meta name="viewport" content=
+    "width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="{% static '/scheduler/style.css' %}" type="text/css"
     media="screen">
 </head>
 <body>
-    <h1>Ini template Django!</h1>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please
+            <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+            your experience.
+            </p>
+        <![endif]-->
+    <div class="container">
+        <h1>Jadwal Tersimpan</h1>
+        <table>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>Mentor</th>
+                <th>Tanggal Jam</th>
+                <th>Durasi</th>
+            </tr>
+            <tr>
+                <td>Hari</td>
+                <td>hari@email.com</td>
+                <td>Reza</td>
+                <td>30-05-2021 10:30</td>
+                <td>30 Menit</td>
+            </tr>
+            <tr>
+                <td>Yoga</td>
+                <td>yoga@email.com</td>
+                <td>Fadil</td>
+                <td>31-05-2021 12:30</td>
+                <td>45 Menit</td>
+            </tr>
+        </table>
+        <div class="navigation">
+            <a class="button" href="{% url 'create' %}">Buat
+            Jadwal</a>
+            <a class="button" href="{% url 'create_mentor' %}">Tambah
+            Mentor</a>
+        </div>
+    </div>
 </body>
 </html>

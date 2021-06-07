@@ -1,4 +1,64 @@
 body {
   background-color: #121212;
-  color: #fff;
+  color: white;
+  font-family: Inter, Helvetica, sans-serif;
+}
+.form_element {
+  margin: 12px;
+}
+.container {
+  margin: 20px;
+}
+button {
+  background-color: mediumaquamarine;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.button {
+  background-color: mediumaquamarine;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  color: black;
+}
+
+table {
+  border: 1px solid white;
+  width: 80%;
+}
+th,
+td {
+  border: 1px solid white;
+  padding: 4px;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='datetime-local'],
+select {
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  width: 360px;
+}
+
+select {
+  width: 382px;
+}
+
+.default {
+  background-color: #fff;
 }

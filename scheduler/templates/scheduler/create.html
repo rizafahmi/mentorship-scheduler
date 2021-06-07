@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mentorship Scheduler</title>
+    <link rel="stylesheet" href="{% static '/scheduler/style.css' %}" type="text/css"
+    media="screen">
+</head>
+<body>
+    <div class="container">
+        <h1>Jadwal Baru</h1>
+        <form>
+            <div class="form_element">
+                <input type="text" name="name" placeholder=
+                "nama kamu" required="">
+            </div>
+            <div class="form_element">
+                <input type="email" name="email" placeholder=
+                "mail@email.com">
+            </div>
+            <div class="form_element">
+                <select>
+                    <option>
+                        Select Mentor
+                    </option>
+                    <option>
+                        Reza
+                    </option>
+                    <option>
+                        Fadil
+                    </option>
+                </select>
+            </div>
+            <div class="form_element">
+                <input type="datetime-local" name="timeslot"
+                placeholder="mail@email.com">
+            </div>
+            <div class="form_element">
+                <input type="number" name="duration" placeholder=
+                "30"> Menit
+            </div>
+            <div class="form_element">
+                <button type="submit">Simpan</button>
+                <a class="button default" href="{% url 'index' %}">Batal</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
