@@ -10,19 +10,21 @@
 <body>
     <div class="container">
         <h1>Mentor Baru</h1>
-        <form>
-            <div class="form_element">
-                <input type="text" name="name" placeholder=
-                "nama mentor" required="">
-            </div>
-            <div class="form_element">
-                <input type="email" name="email" placeholder=
-                "mail@email.com">
-            </div>
-            <div class="form_element">
-                Rp. <input type="number" name="duration" placeholder=
-                "30"> / Menit
-            </div>
+        <form action="{% url 'create_mentor' %}" method="post">
+            {% csrf_token %}
+            {{ form.as_p  }}
+            <!-- <div class="form_element">
+                 <input type="text" name="name" placeholder=
+                 "nama mentor" required="">
+                 </div>
+                 <div class="form_element">
+                 <input type="email" name="email" placeholder=
+                 "mail@email.com">
+                 </div>
+                 <div class="form_element">
+                 Rp. <input type="number" name="duration" placeholder=
+                 "30"> / Menit
+                 </div> -->
             <div class="form_element">
                 <button type="submit">Simpan</button>
                 <a class="button default" href="{% url 'index' %}">Batal</a>
